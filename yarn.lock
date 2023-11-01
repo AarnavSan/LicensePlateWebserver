@@ -40,18 +40,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"Express JS Webserver@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "Express JS Webserver@workspace:."
-  dependencies:
-    body-parser: "npm:^1.20.2"
-    dotenv: "npm:^16.3.1"
-    express: "npm:^4.18.2"
-    mongodb: "npm:^6.2.0"
-    mongoose: "npm:^8.0.0"
-  languageName: unknown
-  linkType: soft
-
 "accepts@npm:~1.3.8":
   version: 1.3.8
   resolution: "accepts@npm:1.3.8"
@@ -415,6 +403,18 @@ __metadata:
   checksum: 30c6b9a39556d69108cac7cf7f87ca8c9f79d37ac58f2224e18d5e5b21191bbfbacee2070064f3c887bc00229d88b8bc728bcc98b07306edeaba85880f100b24
   languageName: node
   linkType: hard
+
+"license_reg_webserver@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "license_reg_webserver@workspace:."
+  dependencies:
+    body-parser: "npm:^1.20.2"
+    dotenv: "npm:^16.3.1"
+    express: "npm:^4.18.2"
+    mongodb: "npm:^6.2.0"
+    mongoose: "npm:^8.0.0"
+  languageName: unknown
+  linkType: soft
 
 "media-typer@npm:0.3.0":
   version: 0.3.0

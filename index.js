@@ -28,12 +28,15 @@ const dataSchema = new mongoose.Schema({
 });
 
 // Create a model based on the schema
-const Data = mongoose.model('Data', dataSchema);
+const Data = mongoose.model('Number_plates', dataSchema);
 
 
 // Middleware to parse JSON data
 app.use(bodyParser.json());
 
+app.post('/', (req, res) => {
+  res.send('use /"add_license_plate to add a license number"')
+});
 // Define the POST endpoint where your NodeMCU will send data
 app.post('/add_license_plate', (req, res) => {
   const data = req.body;
