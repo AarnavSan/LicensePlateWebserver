@@ -34,7 +34,7 @@ const Data = mongoose.model('Number_plates', dataSchema);
 // Middleware to parse JSON data
 app.use(bodyParser.json());
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
   console.log("Get / ");
   res.status.json({message : 'use /"add_license_plate to add a license number"'});
 });
