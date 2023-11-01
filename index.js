@@ -35,7 +35,8 @@ const Data = mongoose.model('Number_plates', dataSchema);
 app.use(bodyParser.json());
 
 app.post('/', (req, res) => {
-  res.send('use /"add_license_plate to add a license number"')
+  console.log("Get / ");
+  res.status.json({message : 'use /"add_license_plate to add a license number"'});
 });
 // Define the POST endpoint where your NodeMCU will send data
 app.post('/add_license_plate', (req, res) => {
