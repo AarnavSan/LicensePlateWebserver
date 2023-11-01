@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
   console.log("Get / ");
-  res.status.json({message : 'use /"add_license_plate to add a license number"'});
+  res.send("use '/add_license_plate' to add a license number");
 });
 // Define the POST endpoint where your NodeMCU will send data
 app.post('/add_license_plate', (req, res) => {
